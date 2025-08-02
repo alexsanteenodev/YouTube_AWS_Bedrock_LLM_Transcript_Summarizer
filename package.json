@@ -1,24 +1,29 @@
 {
-  "name": "aws bedrock llm",
+  "name": "aws_bedrock_llm",
   "version": "0.1.0",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "bin": {
+    "aws_bedrock_llm": "bin/aws_bedrock_llm.js"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest"
+    "test": "jest",
+    "cdk": "cdk"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "22.7.9",
-    "aws-cdk-lib": "2.202.0",
-    "constructs": "^10.0.0",
+    "aws-cdk": "2.1020.2",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
     "typescript": "~5.6.3"
   },
-  "peerDependencies": {
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.859.0",
+    "@aws-sdk/credential-provider-env": "^3.858.0",
     "aws-cdk-lib": "2.202.0",
-    "constructs": "^10.0.0"
+    "constructs": "^10.0.0",
+    "zod": "^4.0.14"
   }
 }
