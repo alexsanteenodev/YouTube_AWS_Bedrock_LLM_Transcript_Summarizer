@@ -17,7 +17,6 @@ You are a structured summarizer. Summarise the following meeting transcript into
 - summary (string)
 
 Respond with *only valid JSON*, no markdown, no preamble, no explanation.
-
 <transcript>
 {{content}}
 </transcript>
